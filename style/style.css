@@ -75,8 +75,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Fonts */
 @font-face {
   font-family: "Glyphter";
-  src: url("../../src/fonts/Glyphter.eot");
-  src: url("../../src/fonts/Glyphter.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/Glyphter.woff") format("woff"), url("../../src/fonts/Glyphter.ttf") format("truetype"), url("../../src/fonts/Glyphter.svg#Glyphter") format("svg");
+  src: url("/src/fonts/Glyphter.eot");
+  src: url("/src/fonts/Glyphter.eot?#iefix") format("embedded-opentype"), url("/src/fonts/Glyphter.woff") format("woff"), url("/src/fonts/Glyphter.ttf") format("truetype"), url("/src/fonts/Glyphter.svg#Glyphter") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -585,7 +585,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 6rem;
   border-radius: 1.6rem;
   border: 0.1rem solid rgba(255, 255, 255, 0.031372549);
-  background: url(../src/img/card-decor.png) no-repeat right bottom/30%;
+  background: url(/src/img/card-decor.png) no-repeat right bottom/30%;
 }
 .article__card-title {
   display: flex;
