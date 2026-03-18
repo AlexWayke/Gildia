@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Guild</title>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a href="#" class="header__logo">
+        <svg width="210" viewBox="0 0 210 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M84.5378 20.9853H77.3423V40.4718H75.0938V18.7383H84.5363L84.5378 20.9853Z" fill="#1E1E1E"/>
+          <path d="M90.9846 29.0793H90.8346L89.7846 31.6263L84.5376 40.3203H83.0391V24.8823H85.4376V34.0248L85.2876 36.2733H85.4376L86.4876 33.7263L91.7346 24.8823H93.2331V40.3218H90.9846V29.0793Z" fill="#1E1E1E"/>
+          <path d="M103.422 26.9806H100.125C100.125 28.7791 99.9751 30.4276 99.8251 32.0776C99.6751 33.7276 99.5251 35.2261 99.2251 36.4246C98.9251 37.6231 98.6251 38.6731 98.1766 39.4231C97.7266 40.1716 97.1281 40.6216 96.2281 40.6216C95.9281 40.6216 95.6281 40.6216 95.3281 40.6216C95.0281 40.6216 94.8796 40.4716 94.5781 40.4716L94.8781 38.5231C95.3266 38.6731 95.6266 38.6731 96.0766 38.3731C96.3766 38.2231 96.6766 37.6231 96.9766 36.7231C97.2766 35.8231 97.4266 34.4746 97.5766 32.6761C97.7266 30.8776 97.8766 28.3291 97.8766 25.1821H105.521V40.6216H103.421L103.422 26.9806Z" fill="#1E1E1E"/>
+          <path d="M111.518 30.8793C111.968 30.7293 112.268 30.7293 112.716 30.7293C113.016 30.7293 113.465 30.7293 113.765 30.7293C114.665 30.7293 115.413 30.8793 116.013 31.0293C116.613 31.3293 117.062 31.6293 117.512 31.9293C117.812 32.3778 118.112 32.8293 118.262 33.4278C118.412 34.0278 118.562 34.6263 118.562 35.2263C118.562 37.1748 118.112 38.5233 117.212 39.2733C116.312 40.1733 114.813 40.4718 113.015 40.4718C111.816 40.4718 110.616 40.4718 109.566 40.3218V24.8823H111.815V30.8793H111.518ZM111.518 38.3733C112.118 38.5233 112.716 38.5233 113.166 38.5233C115.115 38.5233 116.015 37.4733 116.015 35.5248C116.015 34.6248 115.715 33.8763 115.265 33.2763C114.815 32.6763 114.066 32.5263 113.166 32.5263C112.866 32.5263 112.566 32.5263 112.266 32.5263C111.966 32.5263 111.666 32.6763 111.366 32.6763V38.3718L111.518 38.3733Z" fill="#1E1E1E"/>
+          <path d="M131.905 44.3688H130.407L130.107 40.4718H120.964L120.514 44.3688H119.016V38.3733H120.514C120.664 38.0733 120.814 37.7733 120.964 37.1748C121.114 36.5748 121.414 35.6763 121.564 34.6278C121.714 33.5778 122.014 32.2293 122.164 30.5808C122.314 28.9323 122.464 27.1338 122.464 24.8853H130.258V38.3763H131.907V44.3688H131.905ZM127.86 38.3733V26.9808H124.411C124.411 27.8808 124.261 28.7793 124.261 29.8278C124.261 30.8778 124.111 31.9263 123.961 32.9763C123.811 34.0263 123.661 35.0748 123.511 35.9748C123.361 36.8748 123.061 37.7733 122.761 38.3733H127.86Z" fill="#1E1E1E"/>
+          <path d="M141.946 31.4778L142.096 29.0793H141.946L140.898 31.7778L135.651 40.4718H134.152V24.8823H136.401V34.0248L136.251 36.2733H136.401L137.449 33.7263L142.696 24.8823H144.195V40.3218H141.946V31.4778Z" fill="#1E1E1E"/>
+          <path d="M154.088 34.026L152.14 34.326L148.991 40.3215H146.293L149.14 35.0745L150.19 34.0245C149.29 33.8745 148.691 33.4245 148.091 32.676C147.491 31.9275 147.191 31.0275 147.191 29.829C147.191 28.0305 147.641 26.682 148.69 25.782C149.74 25.032 151.088 24.5835 152.737 24.5835C153.337 24.5835 153.935 24.5835 154.535 24.7335C155.135 24.8835 155.585 24.8835 156.184 25.0335V40.323H153.935V34.0275L154.088 34.026ZM154.088 32.526V26.8305C153.938 26.6805 153.638 26.6805 153.338 26.6805C153.038 26.6805 152.888 26.6805 152.59 26.6805C151.54 26.6805 150.791 26.9805 150.341 27.429C149.741 27.879 149.591 28.7775 149.591 29.8275C149.591 30.7275 149.891 31.4775 150.491 32.076C151.091 32.5245 151.841 32.826 152.89 32.826L154.088 32.526Z" fill="#1E1E1E"/>
+          <path d="M176.421 20.9853H168.777V40.4718H166.379V18.7383H178.67V40.3233H176.421V20.9853Z" fill="#1E1E1E"/>
+          <path d="M182.719 19.0364C183.319 18.8864 184.069 18.7364 184.817 18.7364C185.567 18.7364 186.316 18.5864 187.066 18.5864C187.816 18.5864 188.714 18.7364 189.464 18.8864C190.213 19.0364 190.963 19.4864 191.713 19.9364C192.313 20.3864 192.911 21.1349 193.211 22.0349C193.661 22.9349 193.811 23.9834 193.811 25.3319C193.811 26.6804 193.661 27.7304 193.211 28.6289C192.761 29.5289 192.311 30.2774 191.713 30.8774C191.113 31.4774 190.363 31.9274 189.614 32.0759C188.866 32.3759 187.966 32.5244 187.067 32.5244C186.917 32.5244 185.119 32.5244 184.967 32.5244V40.7684H182.719V19.0364ZM187.066 20.6849C186.616 20.6849 186.317 20.6849 185.867 20.6849C185.417 20.6849 185.117 20.8349 184.967 20.8349V29.9789C185.117 29.9789 186.916 29.9789 187.067 29.9789C187.667 29.9789 188.266 29.9789 188.716 29.8289C189.316 29.6789 189.766 29.3804 190.066 29.0804C190.516 28.6319 190.814 28.1804 191.114 27.5819C191.414 26.9819 191.564 26.0834 191.564 25.1834C191.564 24.2834 191.414 23.5334 191.264 23.0849C190.964 22.4849 190.664 22.0364 190.364 21.7364C189.914 21.4364 189.464 21.1364 189.014 20.9879C188.114 20.6849 187.666 20.6849 187.066 20.6849Z" fill="#1E1E1E"/>
+          <path d="M195.609 29.5306C195.609 25.9336 196.209 23.0851 197.408 21.1366C198.606 19.1881 200.406 18.2896 202.803 18.2896C204.152 18.2896 205.202 18.5896 206.1 19.0381C207 19.6381 207.749 20.2366 208.349 21.2866C208.949 22.1866 209.397 23.3851 209.547 24.7336C209.847 26.0821 209.997 27.7321 209.997 29.3791C209.997 32.9761 209.397 35.8246 208.199 37.7731C207 39.7215 205.2 40.6201 202.803 40.6201C201.455 40.6201 200.405 40.32 199.506 39.8715C198.606 39.2715 197.856 38.5231 197.258 37.6231C196.658 36.7231 196.208 35.5246 196.059 34.1761C195.609 32.8261 195.609 31.3276 195.609 29.5306ZM198.008 29.5306C198.008 30.7291 198.158 31.9291 198.308 32.9776C198.458 34.0276 198.758 35.076 199.058 35.8246C199.508 36.5746 199.958 37.323 200.556 37.7731C201.156 38.2215 201.905 38.5231 202.655 38.5231C204.153 38.5231 205.353 37.7731 206.103 36.2746C206.852 34.7761 207.302 32.5261 207.302 29.3791C207.302 28.1806 207.152 26.9806 207.002 25.9306C206.852 24.8806 206.552 23.8321 206.253 23.0836C205.953 22.1836 205.353 21.5851 204.755 21.1351C204.155 20.6851 203.406 20.3866 202.506 20.3866C201.008 20.3866 199.808 21.1351 199.058 22.6351C198.458 24.2836 198.008 26.5321 198.008 29.5306Z" fill="#1E1E1E"/>
+          <path d="M48.8646 15.8892H46.1661L32.2266 29.8287L46.1661 43.9182H48.8646L34.9236 29.8287L48.8646 15.8892Z" fill="#1E1E1E"/>
+          <path d="M54.5614 15.8892H51.8629L37.7734 29.8287L51.8629 43.9182H54.5614L40.4719 29.8287L54.5614 15.8892Z" fill="#1E1E1E"/>
+          <path d="M60.2568 15.8892H57.5598L43.4688 29.8287L57.5598 43.9182H60.2568L46.1672 29.8287L60.2568 15.8892Z" fill="#1E1E1E"/>
+          <path d="M28.0317 29.8287L13.9407 15.8892H11.2422L25.3332 29.8287L11.2422 43.9182H13.9407L28.0317 29.8287Z" fill="#1E1E1E"/>
+          <path d="M22.3348 29.8287L8.39381 15.8892H5.69531L19.7863 29.8287L5.69531 43.9182H8.39381L22.3348 29.8287Z" fill="#1E1E1E"/>
+          <path d="M16.638 29.8287L2.6985 15.8892H0L13.9395 29.8287L0 43.9182H2.6985L16.638 29.8287Z" fill="#1E1E1E"/>
+          <path d="M44.0696 46.0182L30.1286 31.9272L16.0391 46.0182V48.7152L30.1286 34.6257L44.0696 48.7152V46.0182Z" fill="#1E1E1E"/>
+          <path d="M44.0696 51.564L30.1286 37.623L16.0391 51.564V54.261L30.1286 40.1715L44.0696 54.261V51.564Z" fill="#1E1E1E"/>
+          <path d="M44.0696 57.2594L30.1286 43.3184L16.0391 57.2594V59.9579L30.1286 46.0184L44.0696 59.9579V57.2594Z" fill="#1E1E1E"/>
+          <path d="M44.0696 11.2427L30.1286 25.3322L16.0391 11.2427V13.9412L30.1286 28.0307L44.0696 13.9412V11.2427Z" fill="#1E1E1E"/>
+          <path d="M44.0696 5.69678L30.1286 19.7863L16.0391 5.69678V8.39378L30.1286 22.3333L44.0696 8.39378V5.69678Z" fill="#1E1E1E"/>
+          <path d="M44.0696 0L30.1286 13.941L16.0391 0V2.6985L30.1286 16.6395L44.0696 2.6985V0Z" fill="#1E1E1E"/>
+        </svg>
+      </a>
+      <button class="header__burger">
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+      </button>
+      <div class="header__nav-wrapper">
+        <button class="header__nav-background">&nbsp;</button>
+        <div class="header__nav-content">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">IT-аутсорсинг</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Сайт</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Вакансии</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Frontmail</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__btn">
+            <p class="header__text">Обратная связь</p>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper">
+        <div class="grid--2">
+          <section class="main-article">
+            <h1 class="main-article__title">Аутсорсинг верстки email-рассылок</h1>
+            <p class="main-article__text">Интегрируемся в ваши процессы как внешний отдел верстки и обеспечиваем стабильный выход рассылок в срок — без простоев и отпусков. Работаем по договору услуг, без найма в штат и без лишних вопросов с документами и налогами.</p>
+            <button class="button-black">Оставить заявку</button>
+          </section>
+          <section class="banner">
+            <img src="./src/img/Banner-1.png" alt="main-banner">
+          </section>
+        </div>
+      </div>
+      <div class="wrapper">
+        <section class="article">
+          <h2 class="article__title">Для кого идеально подходит наше предложение</h2>
+          <ul class="article__list pt-4">
+            <li class="article__item">
+              <p class="article__item-title">Вы делаете регулярные рассылки (от 2 в месяц)</p>
+              <p class="article__item-text">Нужна системность, а не разовые решения</p>
+            </li>
+            <li class="article__item">
+              <p class="article__item-title">Хотите результат, а не постоянные правки</p>
+              <p class="article__item-text">Вы устали контролировать фрилансеров и объяснятьодно и то же</p>
+            </li>
+            <li class="article__item">
+              <p class="article__item-title">Нужны понятные документы</p>
+              <p class="article__item-text">Ваша бухгалтерия требует официальных документов и неохотно работает с самозанятыми.</p>
+            </li>
+            <li class="article__item">
+              <p class="article__item-title">НДС должен работатьна вас</p>
+              <p class="article__item-text">НДС к вычету — важная часть вашей финансовой модели.</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="wrapper--dark">
+        <div class="wrapper wrapper--dark">
+          <section class="article article--black">
+            <h2 class="article__title">Как построена наша работа</h2>
+            <p class="article__subtitle">Интегрируемся в ваши процессы как внешний отдел верстки и обеспечиваем стабильный выход рассылок в срок </p>
+            <ul class="article__points">
+              <li class="article__points-item">
+                <div class="article__points-img">
+                  <img src="./src/img/square.png" alt="point-bg">
+                  <span class="article__points-order">1</span>
+                </div>
+                <p class="article__points-title">Запрос</p>
+                <p class="article__points-text">Вы присылаете задачу в Telegram/почту своему менеджеру</p>
+              </li>
+              <li class="article__points-item">
+                <div class="article__points-img">
+                  <img src="./src/img/square.png" alt="point-bg">
+                  <span class="article__points-order">2</span>
+                </div>
+                <p class="article__points-title">Оценка</p>
+                <p class="article__points-text">Менеджер оценивает задачу в часах, согласует с вами срок и приоритет</p>
+              </li>
+              <li class="article__points-item">
+                <div class="article__points-img">
+                  <img src="./src/img/square.png" alt="point-bg">
+                  <span class="article__points-order">3</span>
+                </div>
+                <p class="article__points-title">Выполнение</p>
+                <p class="article__points-text">Верстка, двойная проверка (исполнитель + senior), тестирование письма</p>
+              </li>
+              <li class="article__points-item">
+                <div class="article__points-img">
+                  <img src="./src/img/square.png" alt="point-bg">
+                  <span class="article__points-order">4</span>
+                </div>
+                <p class="article__points-title">Сдача</p>
+                <p class="article__points-text">Вы получаете архив с кодом, скриншотами тестов и инструкцией</p>
+              </li>
+              <li class="article__points-item">
+                <div class="article__points-img">
+                  <img src="./src/img/square.png" alt="point-bg">
+                  <span class="article__points-order">5</span>
+                </div>
+                <p class="article__points-title">Отчет</p>
+                <p class="article__points-text">В конце месяца — детальный отчет по выполненным задачам и УПД.</p>
+              </li>
+            </ul>
+            <div class="article__grid--2 pt-10">
+              <h2 class="article__title">Предсказуемый бюджет и результат</h2>
+              <p class="article__subtitle">Как штатный специалист, но без хлопот</p>
+            </div>
+            <div class="article__card">
+              <ul class="article__grid--2--x">
+                <li class="article__card-item">
+                  <p class="article__card-title">
+                    <span class="icon icon-check-circle"></span>
+                    <span>Гарантия качества</span>
+                  </p>
+                  <p class="article__card-text">
+                    Код-ревью, тестирование в 40+ почтовых клиентах, скорость загрузки.
+                  </p>
+                </li>
+                <li class="article__card-item">
+                  <p class="article__card-title">
+                    <span class="icon icon-wallet"></span>
+                    <span>Прозрачный расчет</span>
+                  </p>
+                  <p class="article__card-text">
+                    Ежемесячная фиксированная стоимость работ.
+                  </p>
+                </li>
+                <li class="article__card-item">
+                  <p class="article__card-title">
+                    <span class="icon icon-head"></span>
+                    <span>Персональный менеджер</span>
+                  </p>
+                  <p class="article__card-text">
+                    У вас будет выделенный сотрудник погруженный на 100% в ваши требования и задачи.
+                  </p>
+                </li>
+                <li class="article__card-item">
+                  <p class="article__card-title">
+                    <span class="icon icon-file"></span>
+                    <span>Документы «под ключ»</span>
+                  </p>
+                  <p class="article__card-text">
+                    Официальный договор и УПД через ЭДО каждый месяц. Возврат НДС 5%.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="wrapper--gray">
+        <div class="wrapper">
+          <div class="wrapper-t--12">
+            <section class="article">
+              <h2 class="article__title">Процессы, Качество, Коммуникация</h2>
+              <p class="article__subtitle">Мы создаем письма, которые идеально работают в 40+ почтовых клиентах и на всех устройствах. Наши процессы и стандарты — ваша страховка от срывов дедлайнов и технических проблем в рассылке.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper--gray">
+        <div class="wrapper--10">
+          <section class="article">
+            <div class="article__grid--2 pt-2">
+              <h2 class="article__title">Предсказуемый бюджет и результат</h2>
+              <p class="article__subtitle">Как штатный специалист, но без хлопот</p>
+            </div>
+            <ul class="ordered-cards">
+              <li class="ordered-cards__item">
+                <div class="ordered-cards__head">
+                  <p class="ordered-cards__head-number">01</p>
+                  <span class="ordered-cards__head-line"></span>
+                </div>
+                <div class="ordered-cards__body">
+                  <p class="ordered-cards__title">Код-ревью по внутренним стандартам</p>
+                  <p class="ordered-cards__text">Каждое письмо проверяет senior-верстальщик, а не только его автор. Мы следуем собственным стандартам качества, отточенным за 10+ лет работы.</p>
+                </div>
+              </li>
+              <li class="ordered-cards__item">
+                <div class="ordered-cards__head">
+                  <p class="ordered-cards__head-number">02</p>
+                  <span class="ordered-cards__head-line"></span>
+                </div>
+                <div class="ordered-cards__body">
+                  <p class="ordered-cards__title">
+                    <span>Чек-листы</span>
+                    <span class="ordered-cards__tag">50+ проверок</span>
+                  </p>
+                  <p class="ordered-cards__text">Проверяем всё: от корректности тегов и валидности кода до отступов в мобильной версии.</p>
+                </div>
+              </li>
+              <li class="ordered-cards__item">
+                <div class="ordered-cards__head">
+                  <p class="ordered-cards__head-number">03</p>
+                  <span class="ordered-cards__head-line"></span>
+                </div>
+                <div class="ordered-cards__body">
+                  <p class="ordered-cards__title">Тестирование в реальных условиях</p>
+                  <p class="ordered-cards__text">Ручное и автоматическое тестирование через Email on Acid и Litmus — на 40+ популярных почтовых клиентах и устройствах. Плюс — реальная отправка в основных клиентах.</p>
+                  <div class="ordered-cards__tag-list">
+                    <span class="ordered-cards__tag">Gmail</span>
+                    <span class="ordered-cards__tag">Outlook</span>
+                    <span class="ordered-cards__tag">Apple Mail</span>
+                    <span class="ordered-cards__tag">iOS · Android</span>
+                  </div>
+                </div>
+              </li>
+              <li class="ordered-cards__item">
+                <div class="ordered-cards__head">
+                  <p class="ordered-cards__head-number">04</p>
+                  <span class="ordered-cards__head-line"></span>
+                </div>
+                <div class="ordered-cards__body">
+                  <p class="ordered-cards__title">Предсказуемый и стабильный результат</p>
+                  <p class="ordered-cards__text">Вы получаете валидный, кроссбраузерный, минимальный по весу, быстрый код. Средняя скорость загрузки наших писем — менее 3 секунд даже на мобильном интернете. Риск «поплывшей» верстки или технических багов после запуска сведён к нулю.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="wrapper--gray">
+        <div class="wrapper--10">
+          <div class="wrapper-t--2">
+            <section class="article">
+              <div class="article__grid-1-2 pt-2">
+                <h2 class="article__title">Прозрачная коммуникация</h2>
+                <p class="article__subtitle">Нам важно, чтобы вам было комфортно работать с нами</p>
+              </div>
+              <ul class="ordered-cards_row">
+                <li class="ordered-cards__item">
+                  <div class="ordered-cards__head">
+                    <p class="ordered-cards__head-number">01</p>
+                    <span class="ordered-cards__head-line"></span>
+                    <span class="ordered-cards__head-icon">
+                      <span class="icon-chat"></span>
+                    </span>
+                  </div>
+                  <div class="ordered-cards__body">
+                    <p class="ordered-cards__title">Каналы связи</p>
+                    <ul class="card__list">
+                      <li class="card card_row">
+                        <div class="card__icon card__icon_blue">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_107_1534)">
+                            <path d="M12.8307 1.16669L6.41406 7.58335" stroke="#2563EB" stroke-width="1.16667"/>
+                            <path d="M12.8307 1.16669L8.7474 12.8334L6.41406 7.58335L1.16406 5.25002L12.8307 1.16669Z" stroke="#2563EB" stroke-width="1.16667"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_107_1534">
+                            <rect width="14" height="14" fill="white"/>
+                            </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div class="card__info">
+                          <p class="card__title">Telegram</p>
+                          <p class="card__text">Основной — самый оперативный</p>
+                        </div>
+                        <div class="card__tag card__tag_blue">
+                          <span>Главный</span>
+                        </div>
+                      </li>
+                      <li class="card card_row">
+                        <div class="card__icon card__icon_blue">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.6641 2.33331H2.33073C1.6864 2.33331 1.16406 2.85565 1.16406 3.49998V10.5C1.16406 11.1443 1.6864 11.6666 2.33073 11.6666H11.6641C12.3084 11.6666 12.8307 11.1443 12.8307 10.5V3.49998C12.8307 2.85565 12.3084 2.33331 11.6641 2.33331Z" stroke="#5A6778" stroke-width="1.16667"/>
+    <path d="M12.8307 4.08331L7.59823 7.40831C7.41814 7.52114 7.20991 7.58099 6.9974 7.58099C6.78488 7.58099 6.57665 7.52114 6.39656 7.40831L1.16406 4.08331" stroke="#5A6778" stroke-width="1.16667"/>
+                          </svg>
+                        </div>
+                        <div class="card__info">
+                          <p class="card__title">Email</p>
+                          <p class="card__text">Задачи и документация</p>
+                        </div>
+                      </li>
+                      <li class="card card_row">
+                        <div class="card__icon card__icon_blue">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_107_1550)">
+                            <path d="M13.4193 4.08331L9.33594 6.99998L13.4193 9.91665V4.08331Z" stroke="#5A6778" stroke-width="1.16667"/>
+                            <path d="M8.16927 2.91669H1.7526C1.10827 2.91669 0.585938 3.43902 0.585938 4.08335V9.91669C0.585938 10.561 1.10827 11.0834 1.7526 11.0834H8.16927C8.8136 11.0834 9.33594 10.561 9.33594 9.91669V4.08335C9.33594 3.43902 8.8136 2.91669 8.16927 2.91669Z" stroke="#5A6778" stroke-width="1.16667"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_107_1550">
+                            <rect width="14" height="14" fill="white"/>
+                            </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div class="card__info">
+                          <p class="card__title">Zoom / Google Meet</p>
+                          <p class="card__text">При необходимости</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="ordered-cards__item">
+                  <div class="ordered-cards__head">
+                    <p class="ordered-cards__head-number">02</p>
+                    <span class="ordered-cards__head-line"></span>
+                    <span class="ordered-cards__head-icon">
+                      <span class="icon-clock"></span>
+                    </span>
+                  </div>
+                  <div class="ordered-cards__body">
+                    <p class="ordered-cards__title">Рабочие часы</p>
+                    <div class="card card_col">
+                      <div class="card__week">
+                        <div class="card__day"><span>Пн</span><span class="card__day-dot"></span></div>
+                        <div class="card__day"><span>Вт</span><span class="card__day-dot"></span></div>
+                        <div class="card__day"><span>Ср</span><span class="card__day-dot"></span></div>
+                        <div class="card__day"><span>Чт</span><span class="card__day-dot"></span></div>
+                        <div class="card__day"><span>Пт</span><span class="card__day-dot"></span></div>
+                        <div class="card__day"><span>Сб</span><span class="card__day-dot"></span></div>
+                        <div class="card__day"><span>Вс</span><span class="card__day-dot"></span></div>
+                      </div>
+                      <div class="card__info_big">
+                        <p class="card__title">9:00 — 17:00</p>
+                        <p class="card__text">по МСК · Вне часов по согласованию</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="ordered-cards__item">
+                  <div class="ordered-cards__head">
+                    <p class="ordered-cards__head-number">03</p>
+                    <span class="ordered-cards__head-line"></span>
+                    <span class="ordered-cards__tag">≤ 2 часов</span>
+                  </div>
+                  <div class="ordered-cards__body">
+                    <p class="ordered-cards__title">Сроки ответа</p>
+                    <div class="card card_col">
+                      <div class="card__info">
+                        <p class="card__title"><span class="card__title-dot_blue"></span><span>Вопросы</span></p>
+                        <p class="card__text">Отвечаем в течение 2 часов в рабочее время.</p>
+                      </div>
+                    </div>
+                    <div class="card card_col">
+                      <div class="card__info">
+                        <p class="card__title"><span class="card__title-dot_green"></span><span>Статус по задачам</span></p>
+                        <p class="card__text">Обновляем ежедневно.</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper--dark">
+        <div class="wrapper wrapper--dark">
+          <section class="article article--black">
+            <h2 class="article__title">Честная работа с правками</h2>
+            <p class="article__subtitle">Стремимся попасть в результат с первого раза, но спокойно относимся к правкам. Не ограничиваем их количество: вносим изменения сразу и фиксируем время в отчёте — без дополнительных смет и согласований. </p>
+            <div class="article__btn-wrapper">
+              <button class="article__btn">Оставить заявку</button>
+            </div>
+            <div class="article__card">
+              <ul class="article__grid--2--x">
+                <li class="article__card-item">
+                  <p class="article__card-title">
+                    <span class="icon icon-stop"></span>
+                    <span>Без лимита правок</span>
+                  </p>
+                  <p class="article__card-text">
+                    Никаких счётчиков и ограничений. Дорабатываем до результата, который вас устроит
+                  </p>
+                </li>
+                <li class="article__card-item">
+                  <p class="article__card-title">
+                    <span class="icon icon-sand-clock"></span>
+                    <span>Без дополнительных смет и КП</span>
+                  </p>
+                  <p class="article__card-text">
+                    Правки вносятся сразу. Никаких ожиданий и лишних согласований
+                  </p>
+                </li>
+                <li class="article__card-item">
+                  <p class="article__card-title">
+                    <span class="icon icon-clock"></span>
+                    <span>Время фиксируется в отчёте</span>
+                  </p>
+                  <p class="article__card-text">
+                    Полная прозрачность: каждая правка учитывается в рабочем логе
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="wrapper--gray">
+        <div class="wrapper--10">
+          <div class="wrapper-t--2">
+            <section class="article">
+              <div class="article__grid--2 pt-2">
+                <h2 class="article__title">Примеры наших работ</h2>
+                <p class="article__subtitle">Десктоп и мобильные версии писем, протестированные на всех устройствах.</p>
+              </div>
+            </section>
+            <section class="examples">
+              <div class="examples__list">
+                <li class="examples__item">
+                  <div class="examples__desktop">
+                    <div class="examples__desktop-dots">
+                      <span class="examples__desktop-dot"></span>
+                      <span class="examples__desktop-dot"></span>
+                      <span class="examples__desktop-dot"></span>
+                    </div>
+                    <div class="examples__desktop-url">
+                      <p>campaign-summer-2024.html</p>
+                    </div>
+                  </div>
+                  <div class="examples__img">
+                    <img src="./src/img/examples-pic-first.png" alt="example-of-work">
+                  </div>
+                  <div class="examples__bottom">
+                    <div class="examples__info">
+                      <p class="examples__title">Xiaomi — Desktop</p>
+                      <p class="examples__text">Протестировано in Gmail · Outlook · Apple Mail</p>
+                    </div>
+                    <div class="examples__tag">
+                      <span>Desktop</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="examples__item">
+                  <div class="examples__img">
+                    <img src="./src/img/examples-pic-second.png" alt="example-of-work">
+                  </div>
+                  <div class="examples__bottom">
+                    <div class="examples__info">
+                      <p class="examples__title">Restore —Mobile</p>
+                      <p class="examples__text">iOS · Android</p>
+                    </div>
+                    <div class="examples__tag">
+                      <span>Mobile</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="examples__item">
+                  <div class="examples__img">
+                    <img src="./src/img/examples-pic-third.png" alt="example-of-work">
+                  </div>
+                  <div class="examples__bottom">
+                    <div class="examples__info">
+                      <p class="examples__title">UNOde50 — Mobile</p>
+                      <p class="examples__text">iOS · Android</p>
+                    </div>
+                    <div class="examples__tag">
+                      <span>Mobile</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="examples__item">
+                  <div class="examples__desktop">
+                    <div class="examples__desktop-dots">
+                      <span class="examples__desktop-dot"></span>
+                      <span class="examples__desktop-dot"></span>
+                      <span class="examples__desktop-dot"></span>
+                    </div>
+                    <div class="examples__desktop-url">
+                      <p>promo-campaign-q4.html</p>
+                    </div>
+                  </div>
+                  <div class="examples__img">
+                    <img src="./src/img/examples-pic-fourth.png" alt="example-of-work">
+                  </div>
+                  <div class="examples__bottom">
+                    <div class="examples__info">
+                      <p class="examples__title">UNOde50 — Desktop</p>
+                      <p class="examples__text">Протестировано in Gmail · Outlook · Apple Mail</p>
+                    </div>
+                    <div class="examples__tag">
+                      <span>Desktop</span>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper--gray">
+        <div class="wrapper">
+          <section class="article">
+            <h2 class="article__title">Выберите подходящий объем часов</h2>
+            <p class="article__subtitle">Все тарифы включают: персонального менеджера, гарантии качества, полную отчетность, юридические и бухгалтерские документы. </p>
+            <div class="article__table">
+              <ul class="article__table-rows">
+                <li class="article__table-rows-item">
+                  <ul class="article__table-cols">
+                    <li class="article__table-cols-item">
+                      <p class="article__table-title">Объем работы/мес.</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">10 ч</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">21 ч</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">42ч</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">84 ч</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">168 ч</p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="article__table-rows-item">
+                  <ul class="article__table-cols">
+                    <li class="article__table-cols-item">
+                      <p class="article__table-title">Стоимость месяца</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">25 000 ₽</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">42 000 ₽</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">63 000 ₽</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">84 000 ₽</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">126 000 ₽</p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="article__table-rows-item">
+                  <ul class="article__table-cols">
+                    <li class="article__table-cols-item">
+                      <p class="article__table-title">Стоимость часа</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">2 500 ₽</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">~ 2 000 ₽</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">~ 1 500 ₽</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">~ 1000 ₽</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">~ 750 ₽</p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="article__table-rows-item">
+                  <ul class="article__table-cols">
+                    <li class="article__table-cols-item">
+                      <p class="article__table-title">Экономия на часе</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">-</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text"><span class="icon-check"></span></p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text"><span class="icon-check"></span><span class="icon-check"></span></p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text"><span class="icon-check"></span><span class="icon-check"></span><span class="icon-check"></span></p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text"><span class="icon-check"></span><span class="icon-check"></span><span class="icon-check"></span><span class="icon-check"></span></p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="article__table-rows-item">
+                  <ul class="article__table-cols">
+                    <li class="article__table-cols-item">
+                      <p class="article__table-title">Что можно сделать</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">~ 1-2 письма</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">~ 3-4 писем</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">~ 5-8 писем</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">~ 10-15 писем</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">~ 20-30 писем</p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="article__table-rows-item">
+                  <ul class="article__table-cols">
+                    <li class="article__table-cols-item">
+                      <p class="article__table-title">Поддержка</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">Telegram, email</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">Приоритет 2 дня</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">Приоритет 2 дня</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">Высокий приоритет</p>
+                    </li>
+                    <li class="article__table-cols-item">
+                      <p class="article__table-text">Выделенный канал</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="article__cards">
+              <ul class="article__cards-list">
+                <li class="article__cards-item">
+                  <div class="article__cards-head">
+                    <p class="article__cards-text_bold">
+                      10 ч / мес
+                    </p>
+                  </div>
+                  <div class="article__cards-body">
+                    <div class="article__cards-row">
+                      <div class="article__cards-col">
+                        <p class="article__cards-text">
+                          Стоимость месяца
+                        </p>
+                        <p class="article__cards-text_bold">
+                          25 000 ₽
+                        </p>
+                      </div>
+                      <div class="article__cards-col">
+                        <p class="article__cards-text">
+                          Стоимость часа
+                        </p>
+                        <p class="article__cards-text_bold">
+                          2 500 ₽
+                        </p>
+                      </div>
+                    </div>
+                    <div class="article__cards-row">
+                      <p class="article__cards-text">
+                        ~ 1-2 письма
+                      </p>
+                    </div>
+                    <div class="article__cards-row">
+                      <p class="article__cards-text">
+                        Экономия на часе&nbsp;&nbsp;—
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="article__cards-item">
+                  <div class="article__cards-head">
+                    <p class="article__cards-text_bold">
+                      21 ч / мес
+                    </p>
+                  </div>
+                  <div class="article__cards-body">
+                    <div class="article__cards-row">
+                      <div class="article__cards-col">
+                        <p class="article__cards-text">
+                          Стоимость месяца
+                        </p>
+                        <p class="article__cards-text_bold">
+                          42 000 ₽
+                        </p>
+                      </div>
+                      <div class="article__cards-col">
+                        <p class="article__cards-text">
+                          Стоимость часа
+                        </p>
+                        <p class="article__cards-text_bold">
+                          ~ 2 000 ₽
+                        </p>
+                      </div>
+                    </div>
+                    <div class="article__cards-row">
+                      <p class="article__cards-text">
+                        ~ 3-4 писем, Приоритет 2 дня
+                      </p>
+                    </div>
+                    <div class="article__cards-row">
+                      <p class="article__cards-text">
+                        Экономия на часе&nbsp;&nbsp;<span class="icon-check">&nbsp;</span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="article__cards-item">
+                  <div class="article__cards-head">
+                    <p class="article__cards-text_bold">
+                      42 ч  / мес
+                    </p>
+                  </div>
+                  <div class="article__cards-body">
+                    <div class="article__cards-row">
+                      <div class="article__cards-col">
+                        <p class="article__cards-text">
+                          Стоимость месяца
+                        </p>
+                        <p class="article__cards-text_bold">
+                          63 000 ₽
+                        </p>
+                      </div>
+                      <div class="article__cards-col">
+                        <p class="article__cards-text">
+                          Стоимость часа
+                        </p>
+                        <p class="article__cards-text_bold">
+                          ~ 1 500 ₽
+                        </p>
+                      </div>
+                    </div>
+                    <div class="article__cards-row">
+                      <p class="article__cards-text">
+                        ~ 5-8 писем, Приоритет 2 дня
+                      </p>
+                    </div>
+                    <div class="article__cards-row">
+                      <p class="article__cards-text">
+                        Экономия на часе&nbsp;&nbsp;<span class="icon-check">&nbsp;</span><span class="icon-check">&nbsp;</span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="article__cards-item">
+                  <div class="article__cards-head">
+                    <p class="article__cards-text_bold">
+                      84 ч  / мес
+                    </p>
+                  </div>
+                  <div class="article__cards-body">
+                    <div class="article__cards-row">
+                      <div class="article__cards-col">
+                        <p class="article__cards-text">
+                          Стоимость месяца
+                        </p>
+                        <p class="article__cards-text_bold">
+                          84 000 ₽
+                        </p>
+                      </div>
+                      <div class="article__cards-col">
+                        <p class="article__cards-text">
+                          Стоимость часа
+                        </p>
+                        <p class="article__cards-text_bold">
+                          ~ 1 000 ₽
+                        </p>
+                      </div>
+                    </div>
+                    <div class="article__cards-row">
+                      <p class="article__cards-text">
+                        ~ 10-15 писем, Высокий приоритет
+                      </p>
+                    </div>
+                    <div class="article__cards-row">
+                      <p class="article__cards-text">
+                        Экономия на часе&nbsp;&nbsp;<span class="icon-check">&nbsp;</span><span class="icon-check">&nbsp;</span><span class="icon-check">&nbsp;</span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="article__cards-item">
+                  <div class="article__cards-head">
+                    <p class="article__cards-text_bold">
+                      168 ч  / мес
+                    </p>
+                  </div>
+                  <div class="article__cards-body">
+                    <div class="article__cards-row">
+                      <div class="article__cards-col">
+                        <p class="article__cards-text">
+                          Стоимость месяца
+                        </p>
+                        <p class="article__cards-text_bold">
+                          126 000 ₽
+                        </p>
+                      </div>
+                      <div class="article__cards-col">
+                        <p class="article__cards-text">
+                          Стоимость часа
+                        </p>
+                        <p class="article__cards-text_bold">
+                          ~ 750 ₽
+                        </p>
+                      </div>
+                    </div>
+                    <div class="article__cards-row">
+                      <p class="article__cards-text">
+                        ~ 20-30 писем, Выделенный канал
+                      </p>
+                    </div>
+                    <div class="article__cards-row">
+                      <p class="article__cards-text">
+                        Экономия на часе&nbsp;&nbsp;<span class="icon-check">&nbsp;</span><span class="icon-check">&nbsp;</span><span class="icon-check">&nbsp;</span><span class="icon-check">&nbsp;</span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <p class="article__hint">Часы действуют в течение календарного месяца. Все цены указаны с учетом НДС 5%</p>
+          </section>
+        </div>
+      </div>
+      <div class="wrapper--dark">
+        <div class="wrapper wrapper--dark">
+          <section class="article article--black">
+            <h2 class="article__title">Обсудить, какой тариф мне подходит</h2>
+            <p class="article__subtitle">Все тарифы включают: персонального менеджера, гарантии качества, полную отчетность, юридические и бухгалтерские документы.</p>
+            <form action="submit" class="form">
+              <input class="form__input" type="text" placeholder="Имя">
+              <input class="form__input" type="text" placeholder="Компания">
+              <input class="form__input" type="text" placeholder="Телефон для связи">
+              <input class="form__input" type="text" placeholder="Примерный объем задач (кол-во писем в месяц)">
+              <div class="form__btn-wrapper">
+                <button class="form__btn">Оставить заявку</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+      <div class="wrapper--gray">
+        <div class="wrapper">
+          <div class="wrapper-t--2">
+            <section class="article">
+              <h2 class="article__title">Частые вопросы</h2>
+              <ul class="article__details-list">
+                <li class="article__details-item">
+                  <details class="article__details">
+                    <summary class="article__details-head"><span>Что входит в «час работы»?</span><span class="icon-arrow"></span></summary>
+                    <div class="article__details-body">Мы работаем со всеми популярными платформами: Mindbox, Unisender, Mailchimp, GetResponse, SendPulse и другими. Если у вас кастомное решение или редкая CRM, мы проведем аудит и настроим интеграцию.</div>
+                  </details>
+                </li>
+                <li class="article__details-item">
+                  <details class="article__details">
+                    <summary class="article__details-head"><span>Как учитываются часы?</span><span class="icon-arrow"></span></summary>
+                    <div class="article__details-body">Мы работаем со всеми популярными платформами: Mindbox, Unisender, Mailchimp, GetResponse, SendPulse и другими. Если у вас кастомное решение или редкая CRM, мы проведем аудит и настроим интеграцию.</div>
+                  </details>
+                </li>
+                <li class="article__details-item">
+                  <details class="article__details">
+                    <summary class="article__details-head"><span>Что если я не израсходую все часы в месяце?</span><span class="icon-arrow"></span></summary>
+                    <div class="article__details-body">Мы работаем со всеми популярными платформами: Mindbox, Unisender, Mailchimp, GetResponse, SendPulse и другими. Если у вас кастомное решение или редкая CRM, мы проведем аудит и настроим интеграцию.</div>
+                  </details>
+                </li>
+                <li class="article__details-item">
+                  <details class="article__details">
+                    <summary class="article__details-head"><span>Что будет если я выйду за лимит часов указанных в тарифном плане?</span><span class="icon-arrow"></span></summary>
+                    <div class="article__details-body">Мы работаем со всеми популярными платформами: Mindbox, Unisender, Mailchimp, GetResponse, SendPulse и другими. Если у вас кастомное решение или редкая CRM, мы проведем аудит и настроим интеграцию.</div>
+                  </details>
+                </li>
+                <li class="article__details-item">
+                  <details class="article__details">
+                    <summary class="article__details-head"><span>Как происходит приемка работы?</span><span class="icon-arrow"></span></summary>
+                    <div class="article__details-body">Мы работаем со всеми популярными платформами: Mindbox, Unisender, Mailchimp, GetResponse, SendPulse и другими. Если у вас кастомное решение или редкая CRM, мы проведем аудит и настроим интеграцию.</div>
+                  </details>
+                </li>
+                <li class="article__details-item">
+                  <details class="article__details">
+                    <summary class="article__details-head"><span>Сколько итераций правок включено?</span><span class="icon-arrow"></span></summary>
+                    <div class="article__details-body">Мы работаем со всеми популярными платформами: Mindbox, Unisender, Mailchimp, GetResponse, SendPulse и другими. Если у вас кастомное решение или редкая CRM, мы проведем аудит и настроим интеграцию.</div>
+                  </details>
+                </li>
+                <li class="article__details-item">
+                  <details class="article__details">
+                    <summary class="article__details-head"><span>Как быстро вы приступаете к новой задаче?</span><span class="icon-arrow"></span></summary>
+                    <div class="article__details-body">Мы работаем со всеми популярными платформами: Mindbox, Unisender, Mailchimp, GetResponse, SendPulse и другими. Если у вас кастомное решение или редкая CRM, мы проведем аудит и настроим интеграцию.</div>
+                  </details>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__link" href="tel:#">
+          <span class="footer-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <g fill="none" stroke="#787878" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="m12 16.01l.01-.011"/><path d="M7 19.4V4.6a.6.6 0 0 1 .6-.6h8.8a.6.6 0 0 1 .6.6v14.8a.6.6 0 0 1-.6.6H7.6a.6.6 0 0 1-.6-.6Z"/></g>
+            </svg>
+          </span>
+          <span class="footer_text">8 (8482) 950 650</span>
+        </a>
+        <a class="footer__link" href="mailto:#">
+          <span class="footer-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>Email SVG Icon</title><path fill="#787878" d="M28 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m-2.2 2L16 14.78L6.2 8ZM4 24V8.91l11.43 7.91a1 1 0 0 0 1.14 0L28 8.91V24Z"/>
+            </svg>
+          </span>
+          <span class="footer_text">info@gildiya.pro</span>
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
